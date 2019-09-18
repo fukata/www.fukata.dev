@@ -1,0 +1,35 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:10.16
+        environment:
+          MYSQL_HOST: '127.0.0.1'
+          MYSQL_USER: 'root'
+          RAILS_ENV: 'test'
+    working_directory: ~/repo
+    steps:
+      # Checkout repo
+      - checkout
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "package-lock.json" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
+      # Install dependencies
+      - run:
+          name: Install dependencies
+          command: |
+            npm install
+      # Save cache
+      - save_cache:
+          paths:
+            - ./vendor/bundle
+          key: v1-dependencies-{{ checksum "package-lock.json" }}
+      - run:
+          name: Deploy to production
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              ./node_modules/.bin/firebase firebase deploy --only hosting --token $FIREBASE_TOKEN
+            fi
