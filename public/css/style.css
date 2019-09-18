@@ -1,0 +1,54 @@
+html, body {
+  background-color: #272b30;
+  color: #aaa;
+}
+
+#main {
+}
+
+#main .header {
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 1em;
+  border-bottom: 1px solid black;
+  letter-spacing: 0.05em;
+}
+
+#main .header h1 {
+  text-align: center;
+  color: white;
+  font-size: 1.5em;
+  margin: 0.5em 0;
+}
+
+#main .content {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+#main .content .links {
+  margin-top: 1.5em;
+}
+
+#main .content .links .link {
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding: 1.5em;
+  text-align: center;
+}
+
+#main .content .links .link,
+#main .content .links .link:hover,
+#main .content .links .link:visited,
+#main .content .links .link:active {
+  background-color: #515960;
+  color: #aaa;
+}
+#main .content .links .link:hover {
+  background-color: #272b30;
+  color: white;
+}
