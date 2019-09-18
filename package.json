@@ -1,0 +1,20 @@
+{
+  "name": "www.fukata.dev",
+  "version": "1.0.0",
+  "description": "website",
+  "dependencies": {},
+  "devDependencies": {
+    "firebase-tools": "^7.3.2"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/fukata/www.fukata.dev.git"
+  },
+  "author": "fukata",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fukata/www.fukata.dev/issues"
+  },
+  "homepage": "https://github.com/fukata/www.fukata.dev#readme"
+}
