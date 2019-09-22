@@ -1,0 +1,18 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    name: 'Deploy'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '10.x' 
+      - run: npm install
+      - run: ./node_modules/.bin/firebase deploy --only hosting --token $FIREBASE_TOKEN
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
