@@ -16,10 +16,11 @@ jobs:
       - run: ./node_modules/.bin/firebase deploy --only hosting --token $FIREBASE_TOKEN
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-      - uses: Ilshidur/action-slack@master
-        env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
-          SLACK_USERNAME: ${{ secrets.SLACK_USERNAME }}
-          SLACK_CHANNEL: ${{ secrets.SLACK_CHANNEL }}
+      - uses: homoluctus/slatify@master
+        if: always()
         with:
-          args: "Deployed {{ GITHUB_REPOSITORY }} to production {{ GITHUB_SHA }}"
+          type: ${{ job.status }}
+          job_name: '*Deploy*'
+          channel: $${{ secrets.SLACK_CHANNEL }}
+          url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          username: ${{ secrets.SLACK_USERNAME }}
