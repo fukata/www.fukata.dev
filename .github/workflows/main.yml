@@ -21,6 +21,6 @@ jobs:
         with:
           type: ${{ job.status }}
           job_name: '*Deploy*'
-          channel: $${{ secrets.SLACK_CHANNEL }}
+          channel: ${{ secrets.SLACK_CHANNEL }}
           url: ${{ secrets.SLACK_WEBHOOK_URL }}
           username: ${{ secrets.SLACK_USERNAME }}
