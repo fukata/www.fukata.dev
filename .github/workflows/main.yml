@@ -21,6 +21,7 @@ jobs:
         with:
           type: ${{ job.status }}
           job_name: '*Deploy*'
-          channel: ${{ secrets.SLACK_CHANNEL }}
+          icon_emoji: ':octocat:'
           url: ${{ secrets.SLACK_WEBHOOK_URL }}
+          channel: ${{ secrets.SLACK_CHANNEL }}
           username: ${{ secrets.SLACK_USERNAME }}
