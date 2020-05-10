@@ -46,7 +46,7 @@ html, body {
 #main .content .links .link:visited,
 #main .content .links .link:active {
   background-color: #515960;
-  color: #aaa;
+  color: white;
 }
 #main .content .links .link:hover {
   background-color: #272b30;
