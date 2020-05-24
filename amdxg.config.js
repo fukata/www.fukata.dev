@@ -9,6 +9,6 @@ module.exports = {
   socialShare: {
     twitter: true,
     hatena: true,
-    facebook: true,
+    facebook: false,
   },
 };
