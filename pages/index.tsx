@@ -13,7 +13,7 @@ export default () => {
         <title>{_config.siteName}</title>
       </Head>
       <Layout config={_config}>
-        <h2>Pages</h2>
+        <h2>Articles</h2>
         <PageList pages={pages as any} />
         <h2>Tags</h2>
         <TagList tags={Object.keys(tagmap)} />
