@@ -5,3 +5,5 @@ node_modules
 amdxg.config
 gen/*
 !.gitkeep
+*.swp
+*.swo
