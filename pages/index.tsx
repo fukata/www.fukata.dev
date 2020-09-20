@@ -13,6 +13,10 @@ export default () => {
         <title>{_config.siteName}</title>
       </Head>
       <Layout config={_config}>
+        <h2>Topics</h2>
+        <ul>
+          <li><a class="underline text-blue-700 hover:no-underline" href="/jobs">仕事の依頼について</a></li>
+        </ul>
         <h2>Articles</h2>
         <PageList pages={pages as any} />
         <h2>Tags</h2>
