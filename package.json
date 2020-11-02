@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "build": "mkdir -p gen && amdxg build && next build && next export && amdxg postbuild",
-    "dev": "amdxg build && next"
+    "dev": "amdxg build && next",
+    "new:page": "amdxg new:page"
   },
   "dependencies": {
     "amdx": "^0.9.0",
