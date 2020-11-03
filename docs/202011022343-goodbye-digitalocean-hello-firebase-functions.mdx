@@ -32,6 +32,14 @@ APIはもちろん、定期実行も簡単に実装できるのは嬉しい。
 
 特に深く考えずに実装すると read/write が多くなってしまい無料枠をあっさり超えそうだったので無駄な read/write が発生しないようにチューニングしました。
 
+## readがやたらと多い
+
+read/writeを改善したと思って定期的に確認していたら以前より悪化していることが分かりました。
+
+ただ、コードをいくら見てもreadが増える原因となるような箇所が見つからなかったのでもしかしたらと思って探してみるとどうやらfirebaseコンソール上でfirestoreのデータを閲覧した時もreadが増えるらしいです。
+
+[Google Cloud Firestore console reading of all documents and charges - Stack Overflow](https://stackoverflow.com/questions/54729505/google-cloud-firestore-console-reading-of-all-documents-and-charges)
+
 # Puppeteer
 
 capybaraから移ったということもありAPIの違いなどは最初は違和感がありましたが慣れれば特に不自由なことは今のところありません。
