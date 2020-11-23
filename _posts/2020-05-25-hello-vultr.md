@@ -1,14 +1,16 @@
 ---
+layout: post
 title: vultrへ引っ越し
 created: 1590366342928
-tags: [traha, vultr]
+date:   2020-05-25 09:25:00 +0900
+categories: [traha, vultr]
 ---
 
 nuxt.js + Railsで実際に何か作ってみようと始めた旅行系のブログのサーバーをDigital OceanからVultrに引っ越しました。
 
-https://traha.org
+[https://traha.org](https://traha.org)
 
-https://twitter.com/fukata/status/1260071907119886338
+[https://twitter.com/fukata/status/1260071907119886338](https://twitter.com/fukata/status/1260071907119886338)
 
 引っ越しの作業自体はansibleのスクリプトがあったのでそれを流すだけです。
 

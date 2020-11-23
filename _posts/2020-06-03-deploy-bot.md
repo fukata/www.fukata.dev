@@ -1,7 +1,7 @@
 ---
+layout: post
 title: Slack経由でBlue/Greenデプロイする
-created: 1591122994770
-tags: []
+date:   2020-06-03 03:36:00 +0900
 ---
 
 # デプロイボット

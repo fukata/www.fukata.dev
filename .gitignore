@@ -1,9 +1,5 @@
-out
-.out
-.next
-node_modules
-amdxg.config
-gen/*
-!.gitkeep
-*.swp
-*.swo
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor

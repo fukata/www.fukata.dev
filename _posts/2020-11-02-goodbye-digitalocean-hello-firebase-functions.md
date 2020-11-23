@@ -1,7 +1,7 @@
 ---
+layout: post
 title: Goodbye Digital Ocean, Hello Firebase
-created: 1604328215622
-tags: [digitalocean, firebase, firebase-functions, firebase-firestore, typescript, puppeteer]
+date:   2020-11-02 23:43:00 +0900
 ---
 
 # Digital OceanからFirebaseに乗り換え

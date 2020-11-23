@@ -1,7 +1,7 @@
 ---
+layout: page
 title: お仕事の依頼について
-created: 1600597392320
-tags: [job]
+permalink: /jobs/
 ---
 
 # 場所

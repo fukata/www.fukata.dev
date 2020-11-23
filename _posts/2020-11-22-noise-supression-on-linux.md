@@ -1,7 +1,7 @@
 ---
+title: Goodbye Digital Ocean, Hello Firebase
 title: Noise Supression on Linux
-created: 1606049908041
-tags: [noise,supression,linux]
+date:   2020-11-22 21:58:00 +0900
 ---
 
 リモート会議中に自分の音声にノイズが混じっている事が多いので少し改善してみました。

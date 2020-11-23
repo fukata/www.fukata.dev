@@ -1,7 +1,7 @@
 ---
+layout: post
 title: RDSのスロークエリの取得、確認方法
-created: 1600003958708
-tags: [db, aws, rds]
+date:   2020-09-13 22:32:00 +0900
 ---
 
 # 突然スパイクするCPU使用率
