@@ -1,5 +1,5 @@
 ---
-title: Goodbye Digital Ocean, Hello Firebase
+layout: post
 title: Noise Supression on Linux
 date:   2020-11-22 21:58:00 +0900
 ---

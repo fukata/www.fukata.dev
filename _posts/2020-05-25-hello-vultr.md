@@ -1,7 +1,6 @@
 ---
 layout: post
 title: vultrへ引っ越し
-created: 1590366342928
 date:   2020-05-25 09:25:00 +0900
 categories: [traha, vultr]
 ---
