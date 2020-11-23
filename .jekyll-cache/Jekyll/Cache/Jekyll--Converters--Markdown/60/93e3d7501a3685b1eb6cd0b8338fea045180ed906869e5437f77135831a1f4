@@ -1,0 +1,46 @@
+I"�	<h1 id="デプロイボット">デプロイボット</h1>
+
+<p><code class="language-plaintext highlighter-rouge">slack-ruby-bot</code> を使ってslack経由でBlue/Greenデプロイ出来るbotを作りました。</p>
+
+<p>bot用フレームワークだと <code class="language-plaintext highlighter-rouge">Python</code> や <code class="language-plaintext highlighter-rouge">node.js</code> 製が多い気がするが社内の技術スタックを考慮してruby製のものを使ってみましたが比較的使いやすかったです。</p>
+
+<h1 id="連携">連携</h1>
+
+<p>BitBucket, Slack, CircleCI, ElasticBeanstalk を連携することで実現しています。</p>
+
+<h1 id="heroku">Heroku</h1>
+
+<p>botを動かしているのはherokuです。</p>
+
+<p>Heroku Teamsを使っているがHeroku TeamsだとFree Dynoが使えないということを今回知りました。</p>
+
+<p>Free Dynoだけでいいなら無理にTeamsにしない方が良いかもしれません。</p>
+
+<h1 id="解決したい点">解決したい点</h1>
+
+<p>なぜ実装しようかと思ったかというと下記のような点を解決したかったからです。</p>
+
+<ul>
+  <li>すべて完了するまで最大30分近くネットが繋がっている必要があり、途中で接続が切れたりすると最初からやり直しになってしまうという状態だった。</li>
+  <li>デプロイのために各自の環境にセットアップが必要。</li>
+  <li>各種手作業で行う箇所があった。
+    <ul>
+      <li>リリース完了報告</li>
+      <li>作業経過報告</li>
+    </ul>
+  </li>
+  <li>デプロイ担当者のネットワーク環境に依存している部分がある。</li>
+</ul>
+
+<h1 id="fedexウィーク">Fedexウィーク</h1>
+
+<p>プロトタイプ自体はFedexウィークという業務に直結しないタスクでも自由に行ってよいという制度の中で作成しました。</p>
+
+<p>突貫工事の部分だったり他のプロジェクトに流用できるように設定ファイル経由にしたりと細かいところの調整に＋1週間くらい業務タスクの合間に行ってやっと完成しました。</p>
+
+<h1 id="これから">これから</h1>
+
+<p>今はデプロイだけを担当しているが他の事もやらせていきたいところです。</p>
+
+<p>タイに戻った時に不安定なネット環境でもちゃんとデプロイが安定してできることを早く確認したいです。</p>
+:ET

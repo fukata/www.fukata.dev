@@ -1,0 +1,36 @@
+I"<h1 id="突然スパイクするcpu使用率">突然スパイクするCPU使用率</h1>
+
+<p>今まで平穏に過ごしていたデータベースのCPU使用率が突然跳ね上がり出しました。</p>
+
+<p>アカウントに紐づくデータが特別多いアカウントの活動が活発なことが起因しているようでした。</p>
+
+<h1 id="スロークエリのダウンロード">スロークエリのダウンロード</h1>
+
+<p>とりあえずこんな感じのスクリプトを書いて直近のスロークエリを手元にダウンロード出来るようにしました。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/usr/bin/env bash
+
+DB_INSTANCE_ID="RDSのインスタンスID"
+AWS_PROFILE="AWSプロフィール"
+aws rds --profile $AWS_PROFILE describe-db-log-files --db-instance-identifier $DB_INSTANCE_ID |jq -r .DescribeDBLogFiles[].LogFileName |grep slow &gt; slowquery-list.txt
+for log in $(cat slowquery-list.txt)
+do
+  echo $log
+  aws rds --profile $AWS_PROFILE download-db-log-file-portion --db-instance-identifier $DB_INSTANCE_ID --log-file-name $log &gt; $(echo $log | cut -d / -f 2)
+done
+</code></pre></div></div>
+
+<h1 id="スロークエリの確認">スロークエリの確認</h1>
+
+<p>個別のファイルを確認する際はこんな感じです。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat mysql-slowquery.log.2020-09-11.13 |jq -rs .[].LogFileData |less
+</code></pre></div></div>
+
+<p>ざっと時間別のクエリ数を確認したい時のスクリプトはこんな感じです。</p>
+
+<p>クエリ数の多い時間順に並べたい場合はwc -lの結果をsortコマンドに繋げても良いでしょう。</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>for f in $(ls mysql-slowquery.log.2020-09-11.*); do echo -n "$f ";  cat $f |jq -rs .[].LogFileData |grep 'User@Host' - |wc -l; done
+</code></pre></div></div>
+:ET
