@@ -2,6 +2,7 @@
 layout: post
 title: Noise Supression on Linux
 date:   2020-11-22 21:58:00 +0900
+tags: [Linux, Audio]
 ---
 
 リモート会議中に自分の音声にノイズが混じっている事が多いので少し改善してみました。

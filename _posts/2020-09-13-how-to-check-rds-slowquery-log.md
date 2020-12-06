@@ -2,6 +2,7 @@
 layout: post
 title: RDSのスロークエリの取得、確認方法
 date:   2020-09-13 22:32:00 +0900
+tags: [AWS]
 ---
 
 # 突然スパイクするCPU使用率
@@ -14,7 +15,7 @@ date:   2020-09-13 22:32:00 +0900
 
 とりあえずこんな感じのスクリプトを書いて直近のスロークエリを手元にダウンロード出来るようにしました。
 
-```
+```bash
 #!/usr/bin/env bash
 
 DB_INSTANCE_ID="RDSのインスタンスID"
@@ -31,7 +32,7 @@ done
 
 個別のファイルを確認する際はこんな感じです。
 
-```
+```bash
 cat mysql-slowquery.log.2020-09-11.13 |jq -rs .[].LogFileData |less
 ```
 
@@ -39,6 +40,6 @@ cat mysql-slowquery.log.2020-09-11.13 |jq -rs .[].LogFileData |less
 
 クエリ数の多い時間順に並べたい場合はwc -lの結果をsortコマンドに繋げても良いでしょう。
 
-```
+```bash
 for f in $(ls mysql-slowquery.log.2020-09-11.*); do echo -n "$f ";  cat $f |jq -rs .[].LogFileData |grep 'User@Host' - |wc -l; done
 ```

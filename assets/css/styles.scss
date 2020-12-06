@@ -2,3 +2,17 @@
 ---
 
 @import "monokai.css";
+
+.post {
+  .post-header {
+    .tags {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+
+      .tag {
+        margin-right: 5px;
+      }
+    }
+  }
+}

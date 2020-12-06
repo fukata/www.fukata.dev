@@ -2,6 +2,7 @@
 layout: post
 title: JekyllのPost作成用Rakeタスク 
 date:  2020-12-06 13:39:00 +0900
+tags: [Jekyll]
 ---
 
 Jekyllには投稿を新規作成するコマンドがないので簡単なRakeタスクを作成しました。　

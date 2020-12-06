@@ -2,7 +2,7 @@
 layout: post
 title: vultrへ引っ越し
 date:   2020-05-25 09:25:00 +0900
-categories: [traha, vultr]
+tags: [Traha, Vultr]
 ---
 
 nuxt.js + Railsで実際に何か作ってみようと始めた旅行系のブログのサーバーをDigital OceanからVultrに引っ越しました。
