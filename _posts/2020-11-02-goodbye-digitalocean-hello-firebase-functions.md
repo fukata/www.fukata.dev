@@ -5,7 +5,7 @@ date:   2020-11-02 23:43:00 +0900
 tags: [Firebase]
 ---
 
-# Digital OceanからFirebaseに乗り換え
+## Digital OceanからFirebaseに乗り換え
 
 自分で運用しているとあるサービスをDigital OceanからFirebaseに乗り換えしました。
 
@@ -13,27 +13,27 @@ tags: [Firebase]
 
 本日、11月02日が仕事が休みだったこともあり以前からちまちま進めていたリプレイスを一気に進めることにしました。
 
-# 乗り換え先としてFirebaseを選択
+## 乗り換え先としてFirebaseを選択
 
 元々、Rails + Sidekiq + Capybara + MySQLという構成でしたが、当面必要な機能はFunctionsで十分そうだったのでFunctions + Firestoreにして、言語もTypeScript + Puppeteerにしました。
 
 以前は管理用のUIもありましたが特に重要ではなかったので削除しました。
 
-# TypeScriptを選んだ理由
+## TypeScriptを選んだ理由
 
 最近、仕事や趣味でRubyを使うことが多く、TypeScriptを多く触る機会が欲しかったというのが一番の理由です。
 
-# Functions
+## Functions
 
 APIはもちろん、定期実行も簡単に実装できるのは嬉しい。
 
 さらにFirestoreへのアクセスも簡単なのでさくっとAPI生やしたり定期実行を行ってデータを永続化するのが非常に楽です。
 
-# Firestore
+## Firestore
 
 特に深く考えずに実装すると read/write が多くなってしまい無料枠をあっさり超えそうだったので無駄な read/write が発生しないようにチューニングしました。
 
-## readがやたらと多い
+### readがやたらと多い
 
 read/writeを改善したと思って定期的に確認していたら以前より悪化していることが分かりました。
 
@@ -41,7 +41,7 @@ read/writeを改善したと思って定期的に確認していたら以前よ�
 
 [Google Cloud Firestore console reading of all documents and charges - Stack Overflow](https://stackoverflow.com/questions/54729505/google-cloud-firestore-console-reading-of-all-documents-and-charges)
 
-# Puppeteer
+## Puppeteer
 
 capybaraから移ったということもありAPIの違いなどは最初は違和感がありましたが慣れれば特に不自由なことは今のところありません。
 

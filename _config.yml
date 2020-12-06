@@ -8,6 +8,12 @@ twitter_username: fukata
 github_username:  fukata
 google_analytics: UA-148224679-1
 theme: minima
+defaults:
+  - scope:
+      path: ""
+    values:
+      toc: true
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-toc

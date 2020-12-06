@@ -8,5 +8,6 @@ gem "rake"
 
 gem "jekyll"
 gem "jekyll-sitemap"
+gem "jekyll-toc"
 
 gem "minima"
