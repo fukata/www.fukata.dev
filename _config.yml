@@ -8,6 +8,8 @@ twitter_username: fukata
 github_username:  fukata
 google_analytics: UA-148224679-1
 theme: minima
+minima:
+  date_format: '%Y-%m-%d'
 defaults:
   - scope:
       path: ""
