@@ -2,7 +2,7 @@
 layout: post
 title: Goodbye Digital Ocean, Hello Firebase
 date:   2020-11-02 23:43:00 +0900
-tags: [Firebase, DigitalOcean]
+tags: [Firebase]
 ---
 
 # Digital OceanからFirebaseに乗り換え

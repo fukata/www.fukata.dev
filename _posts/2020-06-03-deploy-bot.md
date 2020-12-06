@@ -2,7 +2,7 @@
 layout: post
 title: Slack経由でBlue/Greenデプロイする
 date:   2020-06-03 03:36:00 +0900
-tags: [Slack, DevOps]
+tags: [DevOps]
 ---
 
 # デプロイボット
