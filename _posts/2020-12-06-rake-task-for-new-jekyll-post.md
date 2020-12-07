@@ -5,7 +5,9 @@ date:  2020-12-06 13:39:00 +0900
 tags: [Jekyll]
 ---
 
-Jekyllには投稿を新規作成するコマンドがないので簡単なRakeタスクを作成しました。　
+Jekyllには投稿を新規作成するコマンドが標準ではないので簡単なRakeタスクを作成しました。　
+より汎用的な事をやりたい場合は [jekyll-compose](https://github.com/jekyll/jekyll-compose) を使うと良さそうです。
+
 
 ```ruby
 # Rakefile
