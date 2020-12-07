@@ -15,7 +15,10 @@ defaults:
       path: ""
     values:
       toc: true
+git_history:
+  repo: 'fukata/www.fukata.dev'
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-toc
+  - jekyll-git-history
