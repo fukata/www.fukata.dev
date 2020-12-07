@@ -35,6 +35,7 @@ namespace :posts do
 layout: post
 title: #{input[:title]} 
 date:  #{now.strftime("%Y-%m-%d %H:%M:00 %z")}
+tags: []
 ---
 
 PLEASE WRITE GOOD POSTS
