@@ -1,0 +1,45 @@
+---
+---
+
+$defaultTextColor: #FAFAF3;
+$defaultBorderColor: #3d3d3d;
+$defaultBackgroundColor: #2D2D2D;
+$defaultLinkColor: #85E89D;
+
+body {
+  background-color: $defaultBackgroundColor;
+  color: $defaultTextColor;
+}
+
+a {
+  color: $defaultLinkColor;
+  &:hover,
+  &:visited {
+    color: $defaultLinkColor;
+  }
+}
+
+.site-title, .site-title {
+  color: $defaultTextColor;
+  &:hover,
+  &:visited {
+    color: $defaultTextColor;
+  }
+}
+
+.site-header {
+  border-top: none;
+  border-bottom: 1px solid $defaultBorderColor;
+}
+
+.site-footer {
+  border-top: 1px solid $defaultBorderColor;
+}
+
+.site-nav .page-link {
+  color: $defaultLinkColor;
+}
+
+pre, code {
+  border: 1px solid $defaultBorderColor;
+}
