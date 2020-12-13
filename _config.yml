@@ -22,3 +22,12 @@ plugins:
   - jekyll-sitemap
   - jekyll-toc
   - jekyll-git-history
+exclude:
+  - .git
+  - .bundle
+  - Gemfile
+  - Gemfile.lock
+  - _config.yml
+  - _layouts
+  - vendor
+  - Rakefile
