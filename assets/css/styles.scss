@@ -3,6 +3,10 @@
 
 @import "./monokai.css";
 
+body {
+  overflow-y: scroll;
+}
+
 .post {
   .post-header {
     .tags {
