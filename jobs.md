@@ -4,13 +4,13 @@ title: お仕事の依頼について
 permalink: /jobs/
 ---
 
-# 場所
+## 場所
 
 現在は拠点をタイにしています。そのため基本的にはリモートでの参加になります。
 
 定期的または突発的にオフラインで作業が必要な場合については交通費をいただければ移動も可能です。
 
-# 得意な領域
+## 得意な領域
 
 - デプロイの自動化
 - Slack Botの実装
@@ -19,11 +19,11 @@ permalink: /jobs/
 - パフォーマンスチューニング
 - コードのリファクタリング
 
-# スキル
+## スキル
 
 ※ 直近で主に使用しているもののみを列挙しています。
 
-## 言語
+### 言語
 
 - Ruby
 - Golang
@@ -31,18 +31,18 @@ permalink: /jobs/
 - JavaScript / TypeScript
 - CSS / Sass
 
-## フレームワーク
+### フレームワーク
 
 - React
 - NuxtJS / Vue.js
 - Rails
 - WordPress
 
-# リンク
+## リンク
 
 - [GitHub](https://github.com/fukata)
 - [Twitter](https://twitter.com/fukata)
 
-# 連絡方法
+## 連絡方法
 
 ご興味がある方は [お問い合わせフォーム](https://docs.google.com/forms/d/16vpVTsHdUbtdghLJl4k5l7UJ2HZxRD1O-ZfxoLT5yyw/) または [@fukata](https://twitter.com/fukata) 宛にメンションまたはDMください。
