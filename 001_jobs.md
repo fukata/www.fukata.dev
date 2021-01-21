@@ -13,9 +13,9 @@ permalink: /jobs/
 ## 得意な領域
 
 - デプロイの自動化
-- Slack Botの実装
+- Slack Botの開発
 - Dockerを用いた開発環境の整備
-- Ruby / Railsのアップグレード
+- Ruby / Railsのアップグレード・メンテナンス
 - パフォーマンスチューニング
 - コードのリファクタリング
 
