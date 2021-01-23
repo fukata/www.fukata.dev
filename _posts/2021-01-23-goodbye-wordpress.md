@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WordPressで作ったサイトをSimply Staticで静的サイトにしてGithub Pagesで公開する
+title: WordPressのサイトをSimply Staticを使用してGithub Pagesで公開する
 date:  2021-01-23 16:44:00 +0900
 tags: [WordPress]
 ---
