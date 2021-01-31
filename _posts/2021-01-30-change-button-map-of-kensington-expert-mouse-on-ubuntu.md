@@ -150,7 +150,7 @@ IDが変わる事があるので下記のスクリプトで自動検出するよ
 
 ```bash
 mouse_id=$(xinput list |grep 'Kensington Expert Wireless TB Mouse'|egrep -o 'id=([0-9]+)' |cut -d'=' -f2)
-if [ "$tb_id" != "" ]; then
+if [ "$mouse_id" != "" ]; then
   xinput set-button-map $mouse_id 1 2 3 4 5 6 7 3 9
 fi
 ```
