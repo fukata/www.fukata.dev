@@ -143,3 +143,14 @@ fukata:~ $xinput set-button-map 16 1 2 3 4 5 6 7 3 9
 ```
 
 このままだと再起動時に元に戻ってしまうので `.bashrc` や `.bash_profile` などに追記しておくと良いかと思います。
+
+## IDの自動検出
+
+IDが変わる事があるので下記のスクリプトで自動検出するようにしました。
+
+```bash
+mouse_id=$(xinput list |grep 'Kensington Expert Wireless TB Mouse'|egrep -o 'id=([0-9]+)' |cut -d'=' -f2)
+if [ "$tb_id" != "" ]; then
+  xinput set-button-map $mouse_id 1 2 3 4 5 6 7 3 9
+fi
+```
