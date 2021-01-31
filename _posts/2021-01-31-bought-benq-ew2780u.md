@@ -57,7 +57,11 @@ Amazon.co.jpの中で評価の高かったBenQ EW2780U。最近はゲームも�
 
 [Anker PowerExpand+ 7-in-1 USB-C PD メディア ハブ 100W出力 Power Delivery USB-Cポート HDMI USB-Aポート](https://amzn.to/39wemmG) を経由してラップトップとモニターを繋げています。
 
-自分の持っているUSB Type-Cケーブルだと映像出力が出来ないのかなぜかシグナルが検出されませんでした。そのため、HDMIケーブルで接続しています。
+自分の持っているUSB Type-Cケーブルだと映像出力が出来ないのかシグナルが検出されませんでした。そのため、HDMIケーブルで接続しています。
+
+映像出力しているUSB Type-Cケーブルの下記を注文しました。後日ちゃんとHDMIケーブルなしで接続できるか確認します。
+
+[Nimaso USB C Type C ケーブル (Gen2)【100W/5A急速充電 USB3.1 PD対応 4K / 60Hz 映像出力 1m 】タイプc ケーブル MacBook/MacBook Air (2018/2020)、iPad Pro(2018/2020)、Galaxy等type c機種対応](https://amzn.to/3pzrDAD)
 
 今の配置だとSDカードリーダーなどがちょっと奥まったところにあるのでもう少し配置を考えた方が良さそうです。
 
