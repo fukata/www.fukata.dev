@@ -41,7 +41,7 @@ data/
 
 下記の感じで実行することで上記のディレクトリ構造を保ちつつファイルを移動します。
 
-撮影データの日付はExifにある撮影日を元にしています。
+ディレクトリの日付はExifにある撮影日を元にしています。
 
 ```bash
 $ghoto --from /path/to/src --to /path/to/dst --photo-dir camera_raw --video-dir video_raw --concurrency 10 --recursive --force
@@ -53,7 +53,7 @@ $ghoto --from /path/to/src --to /path/to/dst --photo-dir camera_raw --video-dir 
 
 さらに複数のSDカード、メーカー毎のディレクトリ構造の差を吸収するために下記のようなスクリプトを作っています。とりあえず、自分の持っているメーカーであれば問題無く動いています。
 
-そもそもメーカー毎の構造を気にしなくていいように良い感じにしたいところです。
+そもそもメーカー毎の構造を気にしなくていいようにしたいところです。
 
 {% raw %}
 ```bash
