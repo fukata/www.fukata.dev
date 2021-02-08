@@ -20,3 +20,26 @@ body {
     }
   }
 }
+
+.social-buttons {
+  margin-bottom: 5px;
+
+  .social-button {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: small;
+  }
+
+  .twitter-button {
+    color: white;
+    background-color: #0091C5;
+    font-weight: bold;
+  }
+
+  .hatena-bookmark-button {
+    color: white;
+    background-color: #0091C5;
+    font-weight: bold;
+  }
+}

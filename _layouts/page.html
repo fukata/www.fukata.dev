@@ -7,8 +7,12 @@ layout: default
     <h1 class="post-title">{{ page.title | escape }}</h1>
   </header>
 
+  {%- include social-buttons.html -%}
+
   <div class="post-content">
     {{ content | toc }}
   </div>
+
+  {%- include social-buttons.html -%}
 
 </article>

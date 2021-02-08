@@ -1,0 +1,27 @@
+{% if page %}
+  {% assign url = page.url | absolute_url %}
+  {% assign title = page.title %}
+{% elsif post %}
+  {% assign url = post.url | absolute_url %}
+  {% assign title = post.title %}
+{% endif %}
+
+<div class="social-buttons">
+  <a
+    href="https://twitter.com/intent/tweet?tweet={{ title | escape }}%20{{ url | escape }}"
+    class="twitter-button social-button"
+    title="このエントリーをはてなTwitterに追加"
+  >
+    ツイッター
+  </a>
+
+  <a
+    href="http://b.hatena.ne.jp/entry/{{ url | escape }}"
+    class="hatena-bookmark-button social-button"
+    data-hatena-bookmark-title="{{ title | escape }}"
+    data-hatena-bookmark-layout="simple"
+    title="このエントリーをはてなブックマークに追加"
+  >
+    はてな
+  </a>
+</div>
