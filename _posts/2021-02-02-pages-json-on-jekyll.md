@@ -18,8 +18,7 @@ permalink: /pages.json
 ---
 
 {%- assign output = "" -%}
-{%- assign default_paths = site.pages | map: "path" -%}
-{%- assign page_paths = site.header_pages | default: default_paths -%}
+{%- assign page_paths = site.pages | map: "path" -%}
 {%- for path in page_paths -%}
   {%- assign my_page = site.pages | where: "path", path | first -%}
   {%- if my_page.title -%}
