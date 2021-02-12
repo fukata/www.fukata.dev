@@ -49,6 +49,7 @@ begin
 
   # 一度に取得する件数
   size = 10000
+
   while true
     search_opts = {
       body: {
@@ -69,6 +70,7 @@ begin
       },
     }
     search_opts[:body][:search_after] = search_after if search_after
+
     response = client.search(search_opts)
 
     # 各リクエスト毎にIDが変化する可能性があるので最新のIDを設定する
