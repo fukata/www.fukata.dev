@@ -1,14 +1,16 @@
 {% if page %}
   {% assign url = page.url %}
   {% assign title = page.title %}
+  {% assign tags = page.tags %}
 {% elsif post %}
   {% assign url = post.url %}
   {% assign title = post.title %}
+  {% assign tags = post.tags %}
 {% endif %}
 
 <div class="social-buttons">
   <a
-    href="https://twitter.com/intent/tweet?text={{ title | escape }}%20{{ url | absolute_url | escape }}"
+    href="https://twitter.com/intent/tweet?text={{ title | escape }}&url={{ url | absolute_url | escape }}&hashtags={{ tags | join: ','  }}&via={{ site.twitter_username }}"
     class="twitter-button social-button"
     title="このエントリーをはてなTwitterに追加"
   >
