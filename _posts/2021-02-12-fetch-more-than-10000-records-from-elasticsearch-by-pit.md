@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ElasticsearchのPITを使って1万件以上取得する 
+title: elasticsearch-rubyでPITを使って1万件以上取得する 
 date:  2021-02-12 23:32:00 +0900
 tags: [Elasticsearch]
 ---
