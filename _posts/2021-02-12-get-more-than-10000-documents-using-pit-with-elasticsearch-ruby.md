@@ -1,6 +1,6 @@
 ---
 layout: post
-title: elasticsearch-rubyでPITを使って1万件以上取得する 
+title: elasticsearch-rubyでPoint in time APIを使って1万件以上取得する
 date:  2021-02-12 23:32:00 +0900
 tags: [Elasticsearch]
 ---
@@ -78,7 +78,7 @@ begin
 
     # 次に読み込む位置を設定
     search_after = response['hits']['hits'].last['sort']
-   
+
     # 取得できた件数がsizeより少ないなら最後まで読み込んだ
     fetched_num = response['hits']['hits'].size
     if fetched_num < size
