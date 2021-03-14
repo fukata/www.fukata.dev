@@ -1,8 +1,8 @@
 ---
 layout: post
-title: tunnelto.devを使ってみる
+title: 手元の環境をさくっと公開できる「tunnelto.dev」
 date:  2021-03-12 17:51:00 +0900
-tags: [tunnelto.dev]
+tags: [サービス]
 ---
 
 [ngrok.com](https://ngrok.com) のサブドメインが使いたくて有料版を契約しようと久しぶりにログインしてみるとGithub OAuth経由でなぜかログインできず、どうしようかと調べていたら類似サービスの `tunnelto.dev` というのを見つけたのでコレを試してみたらこれでいいやんとなったのでメモします。
