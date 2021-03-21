@@ -16,7 +16,7 @@ tags: [KVM Switch]
 
 ## SV211HDUC
 
-今回購入したのはStarTech.comの「SV211HDUC」になります。
+今回購入したのはStarTech.comの `SV211HDUC` になります。
 
 [StarTech.com USB-Cパソコン対応2ポートKVMスイッチ 4K60Hz HDMI コンパクトUSB Type-Cパソコン切替器 USB-Cケーブル付属 バスパワー対応 MacBook/iPad Pro/ThinkPad/IdeaPad/EliteBook SV211HDUC](https://amzn.to/30ZhZfW)
 
