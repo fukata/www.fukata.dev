@@ -2,7 +2,7 @@
 layout: post
 title: Github Actions上でMySQLに接続できなくなったので bitnami/mysql を使用した
 date:  2021-04-03 12:21:00 +0900
-tags: [Github Actions]
+tags: [GithubActions]
 ---
 
 表題の通りです。
