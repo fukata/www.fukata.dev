@@ -44,8 +44,6 @@ services:
       MYSQL_DATABASE: dummy_test
       MYSQL_USER: 'root'
       MYSQL_AUTHENTICATION_PLUGIN: mysql_native_password
-    ports:
-      - 3306/tcp
     options: >-
       --health-cmd="mysqladmin ping"
       --health-interval=10s
