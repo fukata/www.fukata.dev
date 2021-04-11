@@ -31,9 +31,9 @@ tags: [メモ]
     "latest_version": "2.7.0",
     "actions": [
       // 特定のバージョン以下の場合に強制アップデートさせる
-      { version: "< 2.5", action: "force_update" },
+      { "version": "< 2.5", "action": "force_update" },
       // 特定のバージョンの場合に強制アップデートさせる
-      { version: "= 2.6.1", action: "force_update" },
+      { "version": "= 2.6.1", "action": "force_update" }
     ]
   },
   "ios": {
