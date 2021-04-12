@@ -16,6 +16,8 @@ tags: [メモ]
   - 特定のバージョン固有のバグがある時にそのバージョンを使わせたくない
 - 新しいバージョンがリリース済みならアップデートを促したい
   - これはライブラリでありそう
+  - Androidなら [In app Updates](https://developer.android.com/guide/playcore/in-app-updates?hl=ja) が使えそう
+  - iOSにも似たようなAPIがあるのかな？
 
 ## データ構造
 
