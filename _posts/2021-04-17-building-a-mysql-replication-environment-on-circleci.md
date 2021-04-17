@@ -37,7 +37,7 @@ test:
 
 ```yaml
 test_with_replica:
-  docker
+  docker:
     # MySQL (primary)
     - image: circleci/mysql:5.6.38-ram
       command:
