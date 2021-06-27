@@ -24,6 +24,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-toc
   - jekyll-git-history
+  - jekyll-twitter-plugin
 exclude:
   - .git
   - .bundle
@@ -33,3 +34,4 @@ exclude:
   - _layouts
   - vendor
   - Rakefile
+  - README.md
