@@ -5,7 +5,7 @@ date:  2021-06-27 15:10:00 +0900
 tags: [LambdaTest]
 ---
 
-[Most Powerful Cross Browser Testing Tool Online | LambdaTest](https://www.lambdatest.com/)
+[Most Powerful Cross Browser Testing Tool Online - LambdaTest](https://www.lambdatest.com/)
 
 IE11でE2Eテストを一部行いたくて以前調査していたBrowserstackを使おうかと思ってgemを調べてみると最終更新日が5年前とかになっていたので最近も開発しているものがないのか調べたところLambdaTestが良さそうだったので使ってみることにしました。
 
