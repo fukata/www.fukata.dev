@@ -9,7 +9,7 @@ nuxt.js + Railsで実際に何か作ってみようと始めた旅行系のブ�
 
 [https://traha.org](https://traha.org)
 
-[https://twitter.com/fukata/status/1260071907119886338](https://twitter.com/fukata/status/1260071907119886338)
+{% twitter https://twitter.com/fukata/status/1260071907119886338 %}
 
 引っ越しの作業自体はansibleのスクリプトがあったのでそれを流すだけです。
 
