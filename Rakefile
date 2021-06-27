@@ -1,3 +1,8 @@
+desc '開発用サーバーを起動します。'
+task :dev do |task|
+  system "bundle exec jekyll serve --livereload --force_polling"
+end
+
 namespace :posts do
   desc "新しい投稿を作成します。"
   task :new do |task|
