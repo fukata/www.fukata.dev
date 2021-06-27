@@ -28,6 +28,7 @@ plugins:
 exclude:
   - .git
   - .bundle
+  - .idea
   - Gemfile
   - Gemfile.lock
   - _config.yml
