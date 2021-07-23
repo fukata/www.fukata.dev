@@ -13,3 +13,5 @@ gem "jekyll-git-history", github: "fukata/jekyll-git-history", branch: 'main'
 gem "jekyll-twitter-plugin"
 
 gem "minima"
+
+gem "addressable", ">= 2.8.0"
