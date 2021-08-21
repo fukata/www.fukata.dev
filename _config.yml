@@ -25,6 +25,7 @@ plugins:
   - jekyll-toc
   - jekyll-git-history
   - jekyll-twitter-plugin
+  - jekyll-youtube
 exclude:
   - .git
   - .bundle
