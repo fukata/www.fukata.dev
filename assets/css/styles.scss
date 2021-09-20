@@ -21,14 +21,32 @@ body {
   }
 
   #toc {
-    @media screen and (min-width: 481px) {
+    @media screen and (max-width: 1360px) {
+      width: unset;
+      position: relative;
+      right: unset;
+      top: unset;
+      border: unset;
+      background-color: unset;
+      padding: unset;
+    }
+    @media screen and (min-width: 1360px) {
       width: 200px;
       position: fixed;
-      right: calc(50% - 700px);
+      right: calc(50% - 660px);
       top: 100px;
       border: 1px solid #3d3d3d;
       background-color: #2C2C2C;
-      padding: 40px;
+      padding: 20px;
+
+      margin: 0;
+      li {
+        list-style-type: none;
+        margin: 0;
+        ul {
+          margin-left: 20px;
+        }
+      }
     }
   }
 
