@@ -16,3 +16,4 @@ gem "jekyll-youtube"
 gem "minima"
 
 gem "addressable", ">= 2.8.0"
+gem "webrick"
