@@ -20,6 +20,18 @@ body {
     }
   }
 
+  #toc {
+    @media screen and (min-width: 481px) {
+      width: 200px;
+      position: fixed;
+      right: calc(50% - 700px);
+      top: 100px;
+      border: 1px solid #3d3d3d;
+      background-color: #2C2C2C;
+      padding: 40px;
+    }
+  }
+
   .embed-container {
     margin-bottom: 15px;
   }
