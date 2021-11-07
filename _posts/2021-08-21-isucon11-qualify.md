@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ISUCON11予選に参加して32826点、135位で惨敗しました
+title: ISUCON11予選に参加して32826点、135位で惨敗
 date:  2021-08-21 19:26:00 +0900
 tags: [isucon]
 ---
