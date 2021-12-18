@@ -32,7 +32,9 @@ namespace :posts do
     end
 
     now = Time.now
-    filepath = "_posts/#{now.strftime("%Y-%m-%d")}-#{input[:slug]}.md"
+    post_dir = "_posts/#{now.strftime("%Y")}"
+    Dir.mkdir(post_dir) unless Dir.exsits?(post_dir)
+    filepath = "#{post_dir}/#{now.strftime("%Y-%m-%d")}-#{input[:slug]}.md"
     puts "ファイルを作成します。 #{filepath}"
     File.open(filepath, 'w') do |f|
       f.write(<<"POST"
