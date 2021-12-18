@@ -20,6 +20,12 @@ body {
     }
   }
 
+  .post-content {
+    p {
+      word-break: break-word;
+    }
+  }
+
   #toc {
     @media screen and (max-width: 1360px) {
       width: unset;
