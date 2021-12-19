@@ -11,7 +11,7 @@ tags: [AWS, Google Domain]
 
 下記はAWSの2021-02の料金になります。
 
-![2021-02のAWSの料金](/assets/posts/2021-03-03/5973b141849dcbfd4473bf8f80711c8c.png)
+![2021-02のAWSの料金](/assets/posts/2021/5973b141849dcbfd4473bf8f80711c8c.png)
 
 S3は主に写真のバックアップに使用しています。
 
