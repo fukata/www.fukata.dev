@@ -15,7 +15,7 @@ permalink: /jobs/
 - デプロイの自動化
 - Slack Botの開発
 - Dockerを用いた開発環境の整備
-- Ruby / Railsのアップグレード・メンテナンス
+- Ruby / Railsを使ったアプリケーションの機能開発、アップグレード・メンテナンス
 - パフォーマンスチューニング
 - コードのリファクタリング
 
@@ -26,14 +26,14 @@ permalink: /jobs/
 ### 言語
 
 - Ruby
-- Golang
+- Go
 - PHP
 - JavaScript / TypeScript
 - CSS / Sass
 
 ### フレームワーク
 
-- React
+- Next.js / React
 - NuxtJS / Vue.js
 - Rails
 - WordPress
