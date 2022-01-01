@@ -84,3 +84,12 @@ body {
     font-weight: bold;
   }
 }
+
+span.tag {
+  display: inline-block;
+  border: 1px solid #3d3d3d;
+  background-color: #2C2C2C;
+  padding: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
