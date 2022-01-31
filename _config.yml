@@ -26,6 +26,8 @@ plugins:
   - jekyll-git-history
   - jekyll-twitter-plugin
   - jekyll-youtube
+include:
+  - _headers
 exclude:
   - .git
   - .bundle
