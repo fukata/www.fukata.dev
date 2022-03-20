@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fluter for Windowsで壁紙を変更してみた
+title: Flutter for Windowsで壁紙を変更してみた
 date:  2022-03-21 00:00:00 +0900
 tags: [Flutter]
 ---
