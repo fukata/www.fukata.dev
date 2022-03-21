@@ -114,3 +114,18 @@ span.tag {
   margin-right: 5px;
   margin-bottom: 5px;
 }
+
+pre, code, kbd, samp, var, .git-histories {
+  font-family:
+    'Noto Sans Mono CJK JP',            /* Noto */
+    'Source Han Code JP',               /* 源ノ角 */
+    'Ricty Diminished',                 /* Inconsolata, Circle M+ 1m */
+    'Ricty',                            /* Inconsolata, Migu 1M */
+    Consolas,                           /* 英字 (WindowsVista+) */
+    Menlo,                              /* 英字 (macOS10.6+) */
+    Monaco,                             /* 英字 (Classic Mac OS+) */
+    'Roboto Mono',                      /* 英字 (Android4+) */
+    'Courier New',                      /* Courier (macOS10.3+?, iOS4+?, WindowsXP+?) */
+    Meiryo, /*'メイリオ',               /* 日本語 (WindowsVista+) */
+    monospace;
+}
