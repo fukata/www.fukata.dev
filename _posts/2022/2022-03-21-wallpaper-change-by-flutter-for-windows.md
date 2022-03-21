@@ -23,7 +23,6 @@ win32パッケージのexampleには壁紙を変更するものがなかった�
 
 ```dart
 /// 現在の壁紙のファイルパス
-// TODO: ユーザーが画像を選択できるようにする
 String wallpaperFilePath = path.join(
     "path", "to", "wallpaper.jpg");
 
