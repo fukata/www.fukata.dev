@@ -81,7 +81,7 @@ void _handleChangeWallpaper() {
     free(desktopWallpaper.ptr);
     CoUninitialize();
   }
-
+}
 ```
 
 ## 作りたいもの
