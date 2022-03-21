@@ -22,35 +22,66 @@ win32用のパッケージがありまさにまさにやりたいことが実装
 win32パッケージのexampleには壁紙を変更するものがなかったのでとりあえず動くところまで実装してみました。
 
 ```dart
-final hr = CoInitializeEx(nullptr, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
+/// 現在の壁紙のファイルパス
+// TODO: ユーザーが画像を選択できるようにする
+String wallpaperFilePath = path.join(
+    "path", "to", "wallpaper.jpg");
 
-if (FAILED(hr)) {
+/// 壁紙を変更するボタンが押された時の処理。
+void _handleChangeWallpaper() {
+  var file = File(wallpaperFilePath);
+  if (!file.existsSync()) {
+    // ファイルが存在しない
+    log("画像が存在しない。 filePath=$wallpaperFilePath");
+    return;
+  }
+
+  log("壁紙を変更する。 filePath=$wallpaperFilePath");
+
+  final hr = CoInitializeEx(
+      nullptr, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
+  if (FAILED(hr)) {
     throw WindowsException(hr);
-}
+  }
 
-var desktopWallpaper = DesktopWallpaper.createInstance();
-try {
+  var desktopWallpaper = DesktopWallpaper.createInstance();
+  Pointer<Utf16> wallpaperFilePathPtr = wallpaperFilePath.toNativeUtf16();
+  try {
+    int result = FALSE;
+
     // モニタの数を取得する
     Pointer<Uint32> monitorDevicePathCountPtr = calloc<Uint32>();
-    desktopWallpaper.GetMonitorDevicePathCount(monitorDevicePathCountPtr);
-    log("monitorDevicePathCount=${monitorDevicePathCountPtr.value}");
+    result =
+        desktopWallpaper.GetMonitorDevicePathCount(monitorDevicePathCountPtr);
+    if (result != S_OK) {
+      free(monitorDevicePathCountPtr);
+      throw WindowsException(result);
+    }
+    log("result=$result, monitorDevicePathCountPtr.value=${monitorDevicePathCountPtr.value}");
 
     // すべてのモニタに壁紙を設定する
-    Pointer<Utf16> wallpaperFilePathPtr = wallpaperFilePath.toNativeUtf16();
-    for (var i=0; i<monitorDevicePathCountPtr.value; i++) {
-        Pointer<Pointer<Utf16>> monitorIdPtr = calloc<Pointer<Utf16>>();
-        desktopWallpaper.GetMonitorDevicePathAt(i, monitorIdPtr);
-        desktopWallpaper.SetWallpaper(monitorIdPtr.value, wallpaperFilePathPtr);
-
+    for (var i = 0; i < monitorDevicePathCountPtr.value; i++) {
+      Pointer<Pointer<Utf16>> monitorIdPtr = calloc<Pointer<Utf16>>();
+      result = desktopWallpaper.GetMonitorDevicePathAt(i, monitorIdPtr);
+      if (result != S_OK) {
         free(monitorIdPtr);
+        throw WindowsException(result);
+      }
+      log("result=$result, monitorIdPtr=${monitorIdPtr}");
+
+      log("Change wallpaper. i=$i");
+      desktopWallpaper.SetWallpaper(monitorIdPtr.value, wallpaperFilePathPtr);
+
+      free(monitorIdPtr);
     }
 
-    free(wallpaperFilePathPtr);
     free(monitorDevicePathCountPtr);
-} finally {
+  } finally {
+    free(wallpaperFilePathPtr);
     free(desktopWallpaper.ptr);
     CoUninitialize();
-}
+  }
+
 ```
 
 ## 作りたいもの
