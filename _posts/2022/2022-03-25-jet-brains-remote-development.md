@@ -19,7 +19,7 @@ tags: [JetBrains]
 
 どうやら裏では JetBrains Gateway というのが立ち上がっておりそちらが良い感じにリモートマシンと通信してくれてホストマシンの方でもPhpStormを使った開発ができています。
 
-[Getting started with remote development \| IntelliJ IDEA](https://www.jetbrains.com/help/idea/remote-development-a.html)
+[Getting started with remote development \| IntelliJ IDEA](https://www.jetbrains.com/help/idea/remote-development-a.html)
 
 PhpStorm内でTerminalを開けばリモートマシンにSSHで繋がった状態になっています。
 
