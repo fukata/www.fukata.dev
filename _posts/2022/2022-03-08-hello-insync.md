@@ -19,7 +19,7 @@ OSSのものであれば下記のソフトウェアが良さそうでした。
 
 ## Insync
 
-[Insync - Google Drive, OneDrive, and Dropbox Syncing on Linux, Windows & Mac](https://www.insynchq.com/)
+[Insync - Google Drive, OneDrive, and Dropbox Syncing on Linux, Windows & Mac](https://www.insynchq.com?fp_ref=fukata)
 
 Linuxにも対応している買い切りのソフトウェアになります。
 
