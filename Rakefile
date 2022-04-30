@@ -1,6 +1,6 @@
 desc '開発用サーバーを起動します。'
 task :dev do |task|
-  system "bundle exec jekyll serve --livereload --force_polling"
+  system "bundle exec jekyll serve --livereload --force_polling --host 0.0.0.0 --port 4000"
 end
 
 namespace :posts do

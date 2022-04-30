@@ -1,0 +1,17 @@
+version: '3'
+volumes:
+  bundle_data:
+services:
+  jekyll:
+    image: ruby:2.7.5
+    command: bash -c "cd /app && bundle install --jobs=4 && bundle exec rake dev"
+    environment:
+      BUNDLE_PATH: /app/vendor/bundle/
+    volumes:
+      - .:/app
+      - bundle_data:/app/vendor/bundle
+    ports:
+      - 4000:4000
+      - 35729:35729
+    tty: true
+    stdin_open: true
