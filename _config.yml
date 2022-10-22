@@ -19,6 +19,8 @@ defaults:
       toc: true
 git_history:
   repo: 'fukata/www.fukata.dev'
+mermaid:
+  src: '/assets/js/mermaid/mermaid.min.js'
 plugins:
   - jekyll-feed
   - jekyll-sitemap
@@ -26,6 +28,7 @@ plugins:
   - jekyll-git-history
   - jekyll-twitter-plugin
   - jekyll-youtube
+  - jekyll-mermaid
 include:
   - _headers
 exclude:
