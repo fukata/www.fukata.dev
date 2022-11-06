@@ -47,6 +47,10 @@ body {
     }
   }
 
+  .tag-title.active {
+    background-color: #3f3f3f;
+  }
+
   #toc {
     @media screen and (max-width: 1360px) {
       width: unset;
