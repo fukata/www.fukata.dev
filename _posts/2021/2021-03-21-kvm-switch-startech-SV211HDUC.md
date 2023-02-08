@@ -14,6 +14,13 @@ tags: [KVM Switch]
 - XPS13 9370: Ubuntu 20.04 LTS
 - XPS13 9310: Windows10
 
+2023年02月時点
+
+- M1 Macbook Pro 16: Monterey
+- DELL G15 5521: Windows 11
+
+いずれの環境でも問題なく使えています。
+
 ## SV211HDUC
 
 今回購入したのはStarTech.comの `SV211HDUC` になります。
@@ -24,7 +31,7 @@ tags: [KVM Switch]
 
 通常のKVMスイッチだと各PCからHDMIとUSBケーブルの2本が必要なんですが私が今仕事用で使っているXPS13 9310にはUSB Type-Cが2ポートしかないのでKVMスイッチのために2ポート使ってしまうと電源確保ができません。
 
-もしかしたらUSB Type-CからHDMIとUSBのアダプタ経由すれば使えたのかもしれませんが付かなかった時に悲しくなるのでUSB Type-Cケーブル1本で接続が可能な `SV211HDUC` にしました。
+もしかしたらUSB Type-CからHDMIとUSBのアダプタ経由すれば使えたのかもしれませんが、使えなかった時に悲しくなるのでUSB Type-Cケーブル1本で接続が可能な `SV211HDUC` にしました。
 
 ### 切替時の待ち時間
 
