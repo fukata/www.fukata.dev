@@ -4,7 +4,7 @@ volumes:
 services:
   jekyll:
     image: ruby:2.7.5
-    command: bash -c "cd /app && bundle install --jobs=4 && bundle exec rake dev"
+    command: bash -c "gem update --system && cd /app && bundle install --jobs=4 && bundle exec rake dev"
     environment:
       BUNDLE_PATH: /app/vendor/bundle/
     volumes:
