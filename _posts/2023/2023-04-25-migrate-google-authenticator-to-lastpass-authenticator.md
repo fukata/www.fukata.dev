@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Google Authenticator から Last Pass Authenticator へ移行 
+title: Google Authenticator から LastPass Authenticator へ移行 
 date:  2023-04-26 00:00:00 +0900
 tags: [Authenticator]
 ---
@@ -13,9 +13,11 @@ tags: [Authenticator]
 
 多分、Android版の方はそれほど力入れて開発していないんだろうと思い今後の機能改善もあまり見込めなさそうだったので移行することにしました。
 
-# Last Pass Authenticator
+# LastPass Authenticator
 
-長らくパスワード管理にLast Passを使っていてLast Pass Authenticatorも一部で利用していたのでついでなのでこちらにまとめるようにしました。
+長らくパスワード管理にLastPassを使っていてLastPass Authenticatorも一部で利用していたのでついでなのでこちらにまとめるようにしました。
+
+[LastPass Authenticator - Google Play のアプリ](https://play.google.com/store/apps/details?id=com.lastpass.authenticator&hl=ja&gl=JP)
 
 ## 移行方法
 
@@ -27,7 +29,7 @@ Google Authenticatorにはエクスポート機能がありますが別の端末
 
 Google Authenticatorを利用しているのとは別端末でiVCamを起動させてエクスポート用のQRコードを読み取ることでパソコン側にQRコードなど移行用のデータが表示されます。
 
-後は表示されたQRコードをLast Pass Authenticatorで読み込むだけです。今回は60弱くらいしかなかったのでちまちまと手動で読み込みましたがもしかしたらこれらも自動化する方法があるのかもしれません。
+後は表示されたQRコードをLastPass Authenticatorで読み込むだけです。今回は60弱くらいしかなかったのでちまちまと手動で読み込みましたがもしかしたらこれらも自動化する方法があるのかもしれません。
 
 めったに移行するものでもないのでとりあえず今回は手動で移行しました。
 
