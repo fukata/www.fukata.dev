@@ -3,7 +3,7 @@ volumes:
   bundle_data:
 services:
   jekyll:
-    image: ruby:2.7.5
+    image: ruby:3.2.0
     command: bash -c "gem update --system && cd /app && bundle install --jobs=4 && bundle exec rake dev"
     environment:
       BUNDLE_PATH: /app/vendor/bundle/
