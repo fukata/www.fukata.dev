@@ -48,6 +48,14 @@ jobs:
 
 [www.fukata.dev/deploy.yml at master · fukata/www.fukata.dev · GitHub](https://github.com/fukata/www.fukata.dev/blob/master/.github/workflows/deploy.yml)
 
+### fetch-depth
+
+このブログでは記事の編集履歴を表示するために `fukata/jekyll-git-history` を使っています。
+
+[fukata/jekyll-git-history: Show git history of jekyll post](https://github.com/fukata/jekyll-git-history)
+
+そのため、全コミット履歴が欲しいため fetch-depth を指定しています。
+
 ## Cloudflare Pages でのビルドを止めた理由
 
 移行した理由はCloudflare Pages のビルドではRuby 3系が使えずEOLになっている2.7系までしか使えないためです。
