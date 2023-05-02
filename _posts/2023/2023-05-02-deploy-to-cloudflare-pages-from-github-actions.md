@@ -9,7 +9,7 @@ tags: [Jekyll, Github Actions, Cloudflare Pages]
 
 ソースを見た方が早いと思うので読んでみてください。
 
-```yaml
+```yaml{% raw %}
 name: Deploy
 
 on: [push]
@@ -44,6 +44,7 @@ jobs:
           projectName: www-fukata-dev
           directory: ./_site
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+{% endraw %}
 ```
 
 [www.fukata.dev/deploy.yml at master · fukata/www.fukata.dev · GitHub](https://github.com/fukata/www.fukata.dev/blob/master/.github/workflows/deploy.yml)
