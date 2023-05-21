@@ -68,4 +68,8 @@ class ImageUploader < CarrierWave::Uploader::Base
 end
 ```
 
+# fog-aws v3.19.0 以上の場合
 
+fog-aws v3.19.0 からリトライに関するデフォルトのオプションが追加されたのでアプリ側で対応する必要はなさそうです。
+
+{% twitter https://twitter.com/rajyan_k/status/1659211374927704067 %}
