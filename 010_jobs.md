@@ -38,6 +38,10 @@ permalink: /jobs/
 - Rails
 - WordPress
 
+## 経歴
+
+[こちらを参照ください](/carrier/)
+
 ## リンク
 
 - [GitHub](https://github.com/fukata)
