@@ -34,11 +34,11 @@ permalink: /carrier/
 - 役割：サーバーサイドエンジニア
 - 主な内容：
     - 広告配信エンジンの開発 (Go)
-    - 管理画面の開発 (Perl)
+    - 管理画面の開発 (Perl, Catalyst)
     - オンプレからAWSへの完全移行
     - 大規模配信ログの集計 (fluentd, AWS EMR)
 - 主な使用スキル：
     - Go
     - Perl
     - fluentd
-    - AWS
+    - AWS (EC2, EMR)
