@@ -20,44 +20,45 @@ WPのサイトから配信するHTMLやCSS、JSをいい感じにキャッシュ
 この時にプラグインのコードを確認して下記のコードがプラグインが読み込まれるたびに実行されているのを確認しました。
 
 ```php
-			// to clear /tmpWpfc folder
-			if(is_dir($this->getWpContentDir("/cache/tmpWpfc"))){
-				$this->rm_folder_recursively($this->getWpContentDir("/cache/tmpWpfc"));
-			}
+// to clear /tmpWpfc folder
+if(is_dir($this->getWpContentDir("/cache/tmpWpfc"))){
+    $this->rm_folder_recursively($this->getWpContentDir("/cache/tmpWpfc"));
+}
 ```
 
 実際の削除処理の部分。
 
 ```php
-		public function rm_folder_recursively($dir, $i = 1) {
-			if(is_dir($dir)){
-				$files = @scandir($dir);
-			    foreach((array)$files as $file) {
-			    	if($i > 50 && !preg_match("/wp-fastest-cache-premium/i", $dir)){
-			    		return true;
-			    	}else{
-			    		$i++;
-			    	}
-			        if ('.' === $file || '..' === $file) continue;
-			        if (is_dir("$dir/$file")){
-			        	$this->rm_folder_recursively("$dir/$file", $i);
-			        }else{
-			        	if(file_exists("$dir/$file")){
-			        		@unlink("$dir/$file");
-			        	}
-			        }
-			    }
-			}
-	
-		    if(is_dir($dir)){
-			    $files_tmp = @scandir($dir);
-			    
-			    if(!isset($files_tmp[2])){
-			    	@rmdir($dir);
-			    }
-		    }
+public function rm_folder_recursively($dir, $i = 1) {
+	if(is_dir($dir)){
+		$files = @scandir($dir);
+	    foreach((array)$files as $file) {
+	    	if($i > 50 && !preg_match("/wp-fastest-cache-premium/i", $dir)){
+	    		return true;
+	    	}else{
+	    		$i++;
+	    	}
+	        if ('.' === $file || '..' === $file) continue;
+	        if (is_dir("$dir/$file")){
+	        	$this->rm_folder_recursively("$dir/$file", $i);
+	        }else{
+	        	if(file_exists("$dir/$file")){
+	        		@unlink("$dir/$file");
+	        	}
+	        }
+	    }
+	}
 
-		    return true;
+   if(is_dir($dir)){
+	    $files_tmp = @scandir($dir);
+	    
+	    if(!isset($files_tmp[2])){
+	    	@rmdir($dir);
+	    }
+   }
+
+   return true;
+}
 ```
 
 `/cache/tmpWpfc` は画面からキャッシュの削除を実行した時に直接ファイルを削除するとCPU使用率が一気に上がる可能性があるため一時的に退避しておくゴミ箱みたいな扱いのようです。
