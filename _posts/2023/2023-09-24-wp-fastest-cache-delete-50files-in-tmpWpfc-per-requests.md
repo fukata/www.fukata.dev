@@ -30,31 +30,31 @@ if(is_dir($this->getWpContentDir("/cache/tmpWpfc"))){
 
 ```php
 public function rm_folder_recursively($dir, $i = 1) {
-	if(is_dir($dir)){
-		$files = @scandir($dir);
-	    foreach((array)$files as $file) {
-	    	if($i > 50 && !preg_match("/wp-fastest-cache-premium/i", $dir)){
-	    		return true;
-	    	}else{
-	    		$i++;
-	    	}
-	        if ('.' === $file || '..' === $file) continue;
-	        if (is_dir("$dir/$file")){
-	        	$this->rm_folder_recursively("$dir/$file", $i);
-	        }else{
-	        	if(file_exists("$dir/$file")){
-	        		@unlink("$dir/$file");
-	        	}
-	        }
-	    }
-	}
+    if(is_dir($dir)){
+        $files = @scandir($dir);
+        foreach((array)$files as $file) {
+            if($i > 50 && !preg_match("/wp-fastest-cache-premium/i", $dir)){
+                return true;
+            }else{
+                $i++;
+            }
+            if ('.' === $file || '..' === $file) continue;
+            if (is_dir("$dir/$file")){
+                $this->rm_folder_recursively("$dir/$file", $i);
+            }else{
+                if(file_exists("$dir/$file")){
+                    @unlink("$dir/$file");
+                }
+            }
+        }
+    }
 
    if(is_dir($dir)){
-	    $files_tmp = @scandir($dir);
-	    
-	    if(!isset($files_tmp[2])){
-	    	@rmdir($dir);
-	    }
+        $files_tmp = @scandir($dir);
+        
+        if(!isset($files_tmp[2])){
+            @rmdir($dir);
+        }
    }
 
    return true;
