@@ -13,6 +13,16 @@ tags: [HHKB Studio]
 
 ![HHKB Studio](/assets/posts/2024/PXL_20240320_072630384.jpg)
 
+## 外出先で使ってみたところ
+
+MBP16にキーボードブリッジと一緒に使用
+
+![HHKB Studio](/assets/posts/2024/PXL_20240321_230555075.jpg)
+
+膝置き
+
+![HHKB Studio](/assets/posts/2024/PXL_20240321_231022005.jpg)
+
 ## 購入した理由
 
 これまで
