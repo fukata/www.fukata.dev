@@ -9,7 +9,7 @@ gem "rake"
 gem "jekyll"
 
 # see https://github.com/jekyll/minima/pull/705
-gem "jekyll-sass-converter", "< 3.0"
+gem "jekyll-sass-converter", "< 4.0"
 
 gem "jekyll-sitemap"
 gem "jekyll-toc"
