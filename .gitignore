@@ -9,3 +9,5 @@ vendor
 .tweet-cache
 
 .idea
+
+*.Identifier
