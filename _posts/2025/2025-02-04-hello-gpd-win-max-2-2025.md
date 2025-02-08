@@ -5,7 +5,7 @@ date:  2025-02-04 00:00:00 +0900
 tags: [GPD, UMPC]
 ---
 
-![GPD WIN Max 2 2025](/assets/posts/2025/gpd-win-max-2-2025.png)
+![GPD WIN Max 2 2025](/assets/posts/2025/PXL_20250207_131440492_resized.jpeg)
 
 ## GPD WIN Max 2 2025
 
@@ -26,6 +26,7 @@ tags: [GPD, UMPC]
 
 - [防水タブレットスリーブケース 保護バッグ ポータブルキャリーポーチ GPD Win Max 2 10.1インチ対応 (ダークグレー)](https://amzn.to/4hlmDup)
 - [ミヤビックス GPD WIN Max 2 (2.5D ディスプレイモデル) 用 高精細対応 反射防止 保護 フィルム 防指紋 防気泡 日本製 OverLay Plus Lite](https://amzn.to/4jHdzBA)
+- [LISEN タブレット スタンド iPad 最大15.9インチに対応 伸縮アーム モバイルモニタースタンド 折りたたみ タブレットスタンド 卓上 調節可能 アイパッド スタンド iPadスタンド アルミ合金 タブレットホルダー 滑り止め 置き台 2024 10世代 iPad Pro iPad Air ipad mini Fire Kindle Surface book Switch MacBook](https://amzn.to/414hukB)
 
 ## 購入した理由
 
