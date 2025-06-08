@@ -7,6 +7,10 @@ body {
   overflow-y: scroll;
 }
 
+.wrapper {
+  max-width: calc(900px - (30px * 2));
+}
+
 @media screen and (min-width: 601px) {
   .home {
     .post-meta {
@@ -54,9 +58,32 @@ body {
   }
 
   .post-content {
+    font-size: 18px;
+    line-height: 1.7;
+    
     p {
       word-break: break-word;
+      margin-bottom: 1.5em;
     }
+    
+    h2 {
+      margin-top: 2.5em;
+      margin-bottom: 1em;
+    }
+    
+    h3 {
+      margin-top: 2em;
+      margin-bottom: 0.8em;
+    }
+    
+    blockquote {
+      font-size: 17px;
+    }
+    
+    ul, ol {
+      margin-bottom: 1.5em;
+    }
+    
     .mermaid {
       text-align: center;
     }
@@ -147,6 +174,23 @@ pre, code, kbd, samp, var, .git-histories {
     'Courier New',                      /* Courier (macOS10.3+?, iOS4+?, WindowsXP+?) */
     Meiryo, /*'メイリオ',               /* 日本語 (WindowsVista+) */
     monospace;
+}
+
+pre, code {
+  font-size: 16px;
+}
+
+.post-content {
+  pre {
+    padding: 16px;
+    overflow-x: auto;
+  }
+  
+  p > code, li > code {
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
 }
 
 
