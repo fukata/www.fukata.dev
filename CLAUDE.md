@@ -12,7 +12,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a Jekyll-based personal blog (www.fukata.dev) written in Japanese. The site is deployed to Cloudflare Pages.
+This is a Jekyll-based personal blog (www.fukata.dev) written in Japanese. It uses the minima theme and is deployed to Cloudflare Pages via GitHub Actions.
 
 ## Development Commands
 
@@ -42,22 +42,40 @@ This interactive command (in Japanese) will:
 - Create a new post file in `_posts/YYYY/YYYY-MM-DD-slug.md`
 - Pre-fill with appropriate front matter
 
+### Build for Production
+
+```bash
+JEKYLL_ENV=production bundle exec jekyll build
+```
+
+Output goes to `_site/`.
+
 ## Architecture
 
 ### Key Files
 - `_config.yml`: Jekyll configuration, plugins, and site metadata
 - `Rakefile`: Automation tasks for development and post creation
 - `docker-compose.yml`: Containerized development environment (Ruby 3.4.3)
+- `.ruby-version`: Ruby version specification (3.3.1)
 
 ### Content Structure
 - Blog posts: `_posts/YYYY/YYYY-MM-DD-slug.md`
 - Assets: `assets/posts/YYYY/` for post-specific images
 - Layouts: `_layouts/` (home, page, post)
-- Includes: `_includes/` for reusable components
+- Includes: `_includes/` for reusable components (custom-head, google-analytics, head, social-buttons)
+
+### Jekyll Plugins
+- jekyll-sitemap, jekyll-toc, jekyll-git-history, jekyll-twitter-plugin, jekyll-youtube, jekyll-mermaid
 
 ### Special Features
 - Custom git-history plugin for showing file edit history
 - Support for Twitter/YouTube embeds and Mermaid diagrams
 - Japanese language content
 - Google Analytics integration
-- Cloudflare Pages deployment (see `_headers` for configuration)
+
+## Deployment
+
+Automated via GitHub Actions (`.github/workflows/deploy.yml`):
+- Triggers on push to any branch
+- Builds with Jekyll and deploys to Cloudflare Pages
+- Uses full git history fetch for jekyll-git-history plugin
