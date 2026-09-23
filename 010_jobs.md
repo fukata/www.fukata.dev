@@ -79,8 +79,8 @@ Ruby / Railsを中心としたサーバーサイドエンジニアです。現�
 ## リンク
 
 - [GitHub](https://github.com/fukata)
-- [Twitter](https://twitter.com/fukata)
+- [X（旧Twitter）](https://x.com/fukata)
 
 ## 連絡方法
 
-ご興味がある方は [お問い合わせフォーム](https://docs.google.com/forms/d/16vpVTsHdUbtdghLJl4k5l7UJ2HZxRD1O-ZfxoLT5yyw/) または [@fukata](https://twitter.com/fukata) 宛にメンションまたはDMください。
+ご興味がある方は [お問い合わせフォーム](https://docs.google.com/forms/d/16vpVTsHdUbtdghLJl4k5l7UJ2HZxRD1O-ZfxoLT5yyw/) またはX（旧Twitter）の [@fukata](https://x.com/fukata) 宛にメンションまたはDMください。
