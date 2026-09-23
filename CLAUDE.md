@@ -56,7 +56,7 @@ Output goes to `_site/`.
 - `_config.yml`: Jekyll configuration, plugins, and site metadata
 - `Rakefile`: Automation tasks for development and post creation
 - `docker-compose.yml`: Containerized development environment (Ruby 3.4.3)
-- `.ruby-version`: Ruby version specification (3.3.1)
+- `.ruby-version`: Ruby version specification (3.4.3)
 
 ### Content Structure
 - Blog posts: `_posts/YYYY/YYYY-MM-DD-slug.md`
