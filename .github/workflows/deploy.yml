@@ -25,10 +25,9 @@ jobs:
           JEKYLL_ENV: production
 
       - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@1
+        uses: cloudflare/wrangler-action@v3
         with:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          projectName: www-fukata-dev
-          directory: ./_site
+          command: pages deploy ./_site --project-name=www-fukata-dev --branch=${{ github.ref_name }}
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
