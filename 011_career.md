@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 経歴
-permalink: /carrier/
+permalink: /career/
 ---
 
 ## 2024.02 - 現在 株式会社ZAICO
