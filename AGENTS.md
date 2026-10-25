@@ -1,6 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to AI coding agents when working with code in this repository.
 
 ## Communication Language
 
@@ -41,6 +41,13 @@ This interactive command (in Japanese) will:
 - Prompt for URL slug
 - Create a new post file in `_posts/YYYY/YYYY-MM-DD-slug.md`
 - Pre-fill with appropriate front matter
+
+### Writing Skills
+
+ブログ執筆用のスキルを Agent Skills 標準の構成で `.agents/skills/` に置いています。
+
+- `new-post`: インタビューで内容を引き出してから記事を作成する
+- `review-post`: 記事をレビューし、同意を得てから修正する
 
 ### Build for Production
 

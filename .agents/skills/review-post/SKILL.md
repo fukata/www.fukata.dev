@@ -1,31 +1,23 @@
 ---
-description: 既存のブログ記事をレビューします
-allowed-tools: [Bash, Read, Edit, Glob, Grep]
-argument-hint: <ファイルパス（省略時は最新の記事）>
+name: review-post
+description: このブログ（www.fukata.dev）の記事を、誤字・読みやすさ・SEO・構成・文体・フロントマターの観点でレビューし、同意を得てから修正する。「記事をレビューして」「この記事を見直して」などの依頼で使う。対象の指定がなければ最新の記事を扱う。
 ---
 
-## コンテキスト
+# review-post
 
-### レビュー対象のファイルパス
-!`if [ -n "$ARGUMENTS" ] && [ -f "$ARGUMENTS" ]; then echo "$ARGUMENTS"; else ls -t _posts/*/*.md | head -1; fi`
+## コンテキストの収集
 
-### レビュー対象の記事
-!`if [ -n "$ARGUMENTS" ] && [ -f "$ARGUMENTS" ]; then cat "$ARGUMENTS"; else echo "=== 最新の記事 ==="; LATEST=$(ls -t _posts/*/*.md | head -1); echo "ファイル: $LATEST"; cat "$LATEST"; fi`
+最初に、リポジトリのルートで次のスクリプトを実行し、レビュー対象の記事・比較用の最近の記事・タグ一覧・全記事のタイトルとURLを取得する。対象の記事が指定されていればそのパスを引数に渡す（省略時は最新の記事）。
 
-### 参考用: 最近の別の記事（スタイル比較用）
-!`for f in $(ls -t _posts/*/*.md | head -3 | tail -2); do echo "=== $f ==="; cat "$f"; echo; done`
-
-### 過去に使用されたタグ一覧
-!`grep -rh "^tags:" _posts/ | sed 's/tags: \[//;s/\]//' | tr ',' '\n' | sed 's/^ //' | sort -u`
-
-### 全記事のタイトル一覧（相互リンク確認用）
-!`grep -rh "^title:" _posts/ | sort`
+```bash
+bash .agents/skills/review-post/scripts/context.sh [_posts/YYYY/YYYY-MM-DD-slug.md]
+```
 
 ## タスク
 
 ブログ記事をレビューし、改善点をフィードバックしてください。
 
-レビュー対象: `$ARGUMENTS`（未指定の場合は最新の記事）
+レビュー対象: ユーザーが指定した記事（未指定の場合は最新の記事）
 
 ### レビュー観点
 
@@ -104,4 +96,4 @@ argument-hint: <ファイルパス（省略時は最新の記事）>
 
 ### 修正の適用
 
-レビュー結果を報告した後、ユーザーに修正を適用するかどうか確認してください。ユーザーが同意した場合のみ、Edit ツールを使用してファイルを修正してください。
+レビュー結果を報告した後、ユーザーに修正を適用するかどうか確認してください。ユーザーが同意した場合のみ、ファイルを修正してください。
