@@ -85,12 +85,27 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     table {
+      color: $defaultTextColor;
+      border: 1px solid $defaultBorderColor;
+
       th {
-        background-color: #555555;
-        color: white;
+        background-color: #3a3f4b;
+        color: $sectionTextColor;
+        border: 1px solid #4a4a4a;
+      }
+      td {
+        border: 1px solid $defaultBorderColor;
+
+        code {
+          color: #f92672;
+          background-color: #272822;
+        }
       }
       tr {
-        background-color: #aaaaaa;
+        background-color: $subActiveBackgroundColor;
+      }
+      tr:nth-child(even) {
+        background-color: $activeBackgroundColor;
       }
     }
   }
